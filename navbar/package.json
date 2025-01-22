@@ -1,5 +1,5 @@
 {
-  "name": "@bytebank/account",
+  "name": "@bytebank/navbar",
   "scripts": {
     "start": "webpack serve",
     "start:port": "webpack serve --port",
