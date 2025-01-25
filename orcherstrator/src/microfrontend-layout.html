@@ -18,9 +18,18 @@
   -->
 
   <main>
-    <application name="@bytebank/navbar" ></application>
+    <application name="@bytebank/navbar"></application>
+    <route path="/" exact >
+      <application name="@bytebank/dashboard"></application> 
+    </route>
+    <route path="/account" exact >
+      <application name="@bytebank/account"></application> 
+    </route>
+    <route path="/transaction" >
+      <application name="@bytebank/transaction"></application> 
+    </route>
     <route default>
-      <application name="@bytebank/account"></application>
+      <application name="@bytebank/not-found"></application>
     </route>
   </main>
 </single-spa-router>
