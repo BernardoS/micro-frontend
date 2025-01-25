@@ -53,6 +53,15 @@ Para realizar a criação de um util, foi executado o comando:
 
 E após a sua criação, ele foi importado lá no arquivo `index.ejs`, seguindo o modelo de importação que foi registrado no tópico "2 - Criação de uma parcel".
 
+Após a criação do util, para utilizá-lo é necessário importar dentro de outra página ou componente, assim como mostrado no exemplo abaixo:
+
+![alt text](image-3.png)
+
+Porém, para que esta importação funcione é necessário modificar o `webpack.config.js` do componente que utilizará o utilitário.
+
+Inserindo a referência do utilitário que foi colocada no `index.ejs` dentro do objeto externals que é retornado pelo módulo. No caso abaixo a referência foi o `@bytebank/util`.
+
+![alt text](image-4.png)
 
 
 ## Extra: Modificações que tive que fazer para o projeto funcionar normalmente
