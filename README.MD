@@ -45,6 +45,16 @@ Vale a pena dar atenção ao atributo `exact` que é colocado na tag `route` par
 ![alt text](image-1.png)
 
 
+## 3 - Criação de um util
+
+Para realizar a criação de um util, foi executado o comando:
+
+`npx create-single-spa --moduleType util-module`
+
+E após a sua criação, ele foi importado lá no arquivo `index.ejs`, seguindo o modelo de importação que foi registrado no tópico "2 - Criação de uma parcel".
+
+
+
 ## Extra: Modificações que tive que fazer para o projeto funcionar normalmente
 
 ### 1 - Criar um comando `start:port` no `package.json`
